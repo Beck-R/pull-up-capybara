@@ -1,0 +1,147 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle": {
+			"loop": true,
+			"animation_length": 36.20833,
+			"bones": {
+				"head": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time*150)*0.25", 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"body": {
+					"position": {
+						"vector": [0, "math.sin(query.anim_time*25)*-0.25", 0]
+					}
+				}
+			}
+		},
+		"sitting": {
+			"animation_length": 9.625,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": [-90, 0, 0]
+					},
+					"position": {
+						"vector": [0, -1.7375, 3.5]
+					}
+				},
+				"head": {
+					"rotation": {
+						"vector": ["-12.5 + math.sin(query.anim_time*20)*-2.5", 0, 0],
+						"easing": "easeOutQuad"
+					},
+					"position": {
+						"vector": [0, 1, 5.5]
+					}
+				},
+				"BRleg": {
+					"rotation": {
+						"vector": [-90, 0, 0]
+					},
+					"position": {
+						"vector": [0, -6, -9.5]
+					}
+				},
+				"capybara": {
+					"position": {
+						"vector": [0, 3.5, 0]
+					}
+				},
+				"FRleg": {
+					"rotation": {
+						"vector": [-40, 0, 0]
+					},
+					"position": {
+						"vector": [0, 4, 4]
+					}
+				},
+				"FLleg": {
+					"rotation": {
+						"vector": [-40, 0, 0]
+					},
+					"position": {
+						"vector": [0, 4, 4]
+					}
+				},
+				"BLleg": {
+					"rotation": {
+						"vector": [-90, 0, 0]
+					},
+					"position": {
+						"vector": [0, -6, -9.5]
+					}
+				}
+			}
+		},
+		"walking": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"head": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"BRleg": {
+					"rotation": {
+						"0.0": {
+							"vector": [-25, 0, 0]
+						},
+						"0.25": {
+							"vector": [25, 0, 0]
+						},
+						"0.5": {
+							"vector": [-25, 0, 0]
+						}
+					}
+				},
+				"FRleg": {
+					"rotation": {
+						"0.0": {
+							"vector": [25, 0, 0]
+						},
+						"0.25": {
+							"vector": [-25, 0, 0]
+						},
+						"0.5": {
+							"vector": [25, 0, 0]
+						}
+					}
+				},
+				"FLleg": {
+					"rotation": {
+						"0.0": {
+							"vector": [-25, 0, 0]
+						},
+						"0.25": {
+							"vector": [25, 0, 0]
+						},
+						"0.5": {
+							"vector": [-25, 0, 0]
+						}
+					}
+				},
+				"BLleg": {
+					"rotation": {
+						"0.0": {
+							"vector": [25, 0, 0]
+						},
+						"0.25": {
+							"vector": [-25, 0, 0]
+						},
+						"0.5": {
+							"vector": [25, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

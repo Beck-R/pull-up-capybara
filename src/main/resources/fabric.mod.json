@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "pullupcapybara",
+  "version": "${version}",
+
+  "name": "Pull up Capybara!",
+  "description": "Okay, I pull up, hop out at the after party",
+  "authors": [
+    "beck/Linoleum Countertop"
+  ],
+  "contact": {
+    "homepage": "https://horse-cock.org",
+    "sources": "https://github.com/Beck-R/Pull-up-Capybara"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/pullupcapybara/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "beck.pullup.capybara.PullUpCapybara"
+    ],
+    "client": [
+      "beck.pullup.capybara.PullUpCapybaraClientMod"
+    ]
+  },
+  "mixins": [
+    "pullupcapybara.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
